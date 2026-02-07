@@ -1,29 +1,64 @@
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: #f5f5f5;
+/* Sayfa başlığı */
+h1{
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
-.center-container {
-    position: relative;
+/* Tablo + canvas kutusu */
+.center-container{
+  width: 608px;
+  margin: 0 auto;
+  margin-top: 10px;
+  position: relative; /* canvas absolute için */
 }
 
-table {
-    border-collapse: collapse;
+table{
+  border-collapse: collapse;
+  border-style: hidden;
 }
 
-td {
-    width: 200px;
-    height: 200px;
-    border: 2px solid black;
-    cursor: pointer;
+td{
+  width: 200px;
+  height: 200px;
+  padding: 0;
+  cursor: pointer;
+
+  text-align: center;
+  vertical-align: middle;
+
+  font-size: 140px;
+  font-weight: 400;
+  color: #9a9a9a;
+  user-select: none;
 }
 
-canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    pointer-events: none;
+/* Turuncu çizgiler (GARANTİ) */
+td.r{ border-right: 4px solid orange; }
+td.b{ border-bottom: 4px solid orange; }
+
+/* X / O görünümü (png yoksa da çalışır) */
+.mark{
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.mark.x{
+  color: #e53935; /* kırmızı X */
+}
+
+.mark.o{
+  color: #1e88e5; /* mavi O */
+}
+
+/* Kazanma çizgisi için canvas */
+canvas{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  pointer-events: none;
 }
