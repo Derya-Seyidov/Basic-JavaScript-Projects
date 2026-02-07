@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="./css/game.css" />
+</head>
+
+<body>
+  <h1>TIC TAC TOE</h1>
+
+  <div class="center-container">
+    <!-- Canvas kazanma çizgisi için -->
+    <canvas id="win-lines" width="608" height="608"></canvas>
+
+    <table>
+      <tr>
+        <td id="0" class="r b" onclick="placeXorO('0')"></td>
+        <td id="1" class="r b" onclick="placeXorO('1')"></td>
+        <td id="2" class="b"   onclick="placeXorO('2')"></td>
+      </tr>
+      <tr>
+        <td id="3" class="r b" onclick="placeXorO('3')"></td>
+        <td id="4" class="r b" onclick="placeXorO('4')"></td>
+        <td id="5" class="b"   onclick="placeXorO('5')"></td>
+      </tr>
+      <tr>
+        <td id="6" class="r" onclick="placeXorO('6')"></td>
+        <td id="7" class="r" onclick="placeXorO('7')"></td>
+        <td id="8"       onclick="placeXorO('8')"></td>
+      </tr>
+    </table>
+  </div>
+
+  <script src="./js/tictactoe.js"></script>
+</body>
+</html>
