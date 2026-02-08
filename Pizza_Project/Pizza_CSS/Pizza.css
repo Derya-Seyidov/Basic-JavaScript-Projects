@@ -1,0 +1,137 @@
+/* ===== BASE LAYOUT (ASSIGNMENT REQUIRED) ===== */
+
+#menuBG {
+    width: 720px;
+    margin: 30px auto;
+}
+
+#frmMenu {
+    width: 720px;
+}
+
+#btnOrder {
+    margin: 12px auto 18px auto;
+    width: 140px;
+    height: 44px;
+}
+
+/* 3-column layout */
+.col {
+    width: 240px;
+    float: left;
+    box-sizing: border-box;
+}
+
+/* Cart area */
+#cart {
+    clear: both;
+    margin-top: 18px;
+    width: 720px;
+    min-height: 180px;
+}
+
+/* Receipt text */
+#showText {
+    width: 360px;
+    float: left;
+    min-height: 150px;
+}
+
+#totalPrice {
+    width: 360px;
+    float: right;
+    min-height: 150px;
+}
+
+/* ===== ASSIGNMENT CSS CHALLENGE REQUIREMENTS ===== */
+
+body {
+    background: radial-gradient(circle at top, #0f2a6b 0%, #07153b 70%, #050d24 100%);
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 44px;
+    letter-spacing: 1px;
+    margin: 0 0 18px;
+}
+
+h3 {
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+div {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(255, 255, 255, 0.92);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* ===== VISUAL IMPROVEMENTS (SAFE) ===== */
+
+.menu {
+    padding: 14px 16px;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.06);
+    margin-bottom: 14px;
+}
+
+/* Inputs */
+input[type="radio"],
+input[type="checkbox"] {
+    transform: scale(1.08);
+    margin-right: 8px;
+    accent-color: #ffd166;
+}
+
+/* Button styling */
+#btnOrder {
+    display: block;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: #1a1a1a;
+    background: linear-gradient(135deg, #ffd166 0%, #ffb703 100%);
+    box-shadow: 0 10px 22px rgba(0,0,0,0.25);
+}
+
+#btnOrder:hover {
+    filter: brightness(1.05);
+}
+
+#btnOrder:active {
+    transform: translateY(1px);
+}
+
+/* Cart styling */
+#cart {
+    padding: 14px 16px;
+    border-radius: 14px;
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.06);
+}
+
+#showText h3 {
+    margin-bottom: 8px;
+}
+
+#totalPrice h3 {
+    text-align: right;
+    margin: 0;
+    font-size: 20px;
+}
+
+#totalPrice strong {
+    color: #ffd166;
+}
